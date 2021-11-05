@@ -24,5 +24,10 @@ hs_err_pid*
 
 .DS_Store
 
+
+
 /.idea/
 /micro-spring-step-01/micro-spring-step-01.iml
+/micro-spring-step-01/.idea
+/micro-spring-step-01/target
+
