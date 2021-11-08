@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.ejaeger.springframework.factory.BeanFactory</OriginalElement>
+  <nodes>
+    <node x="231.0" y="779.0">org.ejaeger.springframework.factory.support.InstantiationStrategy</node>
+    <node x="86.75" y="255.0">org.ejaeger.springframework.factory.support.AbstractBeanFactory</node>
+    <node x="288.25" y="642.0">org.ejaeger.springframework.factory.support.DefaultListableBeanFactory</node>
+    <node x="78.25" y="448.0">org.ejaeger.springframework.factory.support.AbstractAutowireCapableBeanFactory</node>
+    <node x="462.0" y="892.0">org.ejaeger.springframework.factory.support.CglibSubclassingInstantiationStrategy</node>
+    <node x="302.5" y="0.0">org.ejaeger.springframework.factory.config.SingletonBeanRegistry</node>
+    <node x="0.0" y="892.0">org.ejaeger.springframework.factory.support.SimpleInstantiationStrategy</node>
+    <node x="274.0" y="105.0">org.ejaeger.springframework.factory.support.DefaultSingletonBeanRegistry</node>
+    <node x="0.0" y="116.5">org.ejaeger.springframework.factory.BeanFactory</node>
+    <node x="0.0" y="992.0">org.ejaeger.springframework.factory.config.BeanDefinition</node>
+    <node x="486.25" y="492.5">org.ejaeger.springframework.factory.support.BeanDefinitionRegistry</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.ejaeger.springframework.factory.support.DefaultListableBeanFactory" target="org.ejaeger.springframework.factory.support.BeanDefinitionRegistry" relationship="REALIZATION">
+      <point x="91.0" y="-50.0" />
+      <point x="561.25" y="617.0" />
+      <point x="668.25" y="617.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="org.ejaeger.springframework.factory.support.SimpleInstantiationStrategy" target="org.ejaeger.springframework.factory.support.InstantiationStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="221.0" y="867.0" />
+      <point x="452.0" y="867.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="org.ejaeger.springframework.factory.support.AbstractBeanFactory" target="org.ejaeger.springframework.factory.BeanFactory" relationship="REALIZATION">
+      <point x="-92.75" y="-71.5" />
+      <point x="179.5" y="230.0" />
+      <point x="127.0" y="230.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="org.ejaeger.springframework.factory.support.AbstractAutowireCapableBeanFactory" target="org.ejaeger.springframework.factory.support.AbstractBeanFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="-72.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="org.ejaeger.springframework.factory.support.CglibSubclassingInstantiationStrategy" target="org.ejaeger.springframework.factory.support.InstantiationStrategy" relationship="REALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="683.0" y="867.0" />
+      <point x="452.0" y="867.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="org.ejaeger.springframework.factory.support.AbstractBeanFactory" target="org.ejaeger.springframework.factory.support.DefaultSingletonBeanRegistry" relationship="GENERALIZATION">
+      <point x="92.75" y="-71.5" />
+      <point x="365.0" y="230.0" />
+      <point x="417.5" y="230.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="org.ejaeger.springframework.factory.support.DefaultSingletonBeanRegistry" target="org.ejaeger.springframework.factory.config.SingletonBeanRegistry" relationship="REALIZATION">
+      <point x="0.0" y="-50.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="org.ejaeger.springframework.factory.support.DefaultListableBeanFactory" target="org.ejaeger.springframework.factory.support.AbstractAutowireCapableBeanFactory" relationship="GENERALIZATION">
+      <point x="-91.0" y="-50.0" />
+      <point x="379.25" y="617.0" />
+      <point x="272.25" y="617.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="452.0" y="926.0" />
+  <SelectedNodes>
+    <node>org.ejaeger.springframework.factory.support.InstantiationStrategy</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
