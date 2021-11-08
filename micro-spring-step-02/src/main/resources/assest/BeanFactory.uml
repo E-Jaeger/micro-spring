@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.ejaeger.springframework.factory.BeanFactory</OriginalElement>
+  <nodes>
+    <node x="118.75" y="255.0">org.ejaeger.springframework.factory.support.AbstractBeanFactory</node>
+    <node x="280.25" y="509.0">org.ejaeger.springframework.factory.support.DefaultListableBeanFactory</node>
+    <node x="98.75" y="404.0">org.ejaeger.springframework.factory.support.AbstractAutowireCapableBeanFactory</node>
+    <node x="28.5" y="0.0">org.ejaeger.springframework.factory.config.SingletonBeanRegistry</node>
+    <node x="0.0" y="105.0">org.ejaeger.springframework.factory.support.DefaultSingletonBeanRegistry</node>
+    <node x="0.0" y="654.0">org.ejaeger.springframework.factory.config.BeanDefinition</node>
+    <node x="468.75" y="404.0">org.ejaeger.springframework.factory.support.BeanDefinitionRegistry</node>
+    <node x="307.0" y="127.5">org.ejaeger.springframework.factory.BeanFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.ejaeger.springframework.factory.support.DefaultListableBeanFactory" target="org.ejaeger.springframework.factory.support.BeanDefinitionRegistry" relationship="REALIZATION">
+      <point x="91.0" y="-50.0" />
+      <point x="553.25" y="484.0" />
+      <point x="650.75" y="484.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="org.ejaeger.springframework.factory.support.AbstractBeanFactory" target="org.ejaeger.springframework.factory.BeanFactory" relationship="REALIZATION">
+      <point x="77.5" y="-49.5" />
+      <point x="351.25" y="230.0" />
+      <point x="404.0" y="230.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="org.ejaeger.springframework.factory.support.AbstractAutowireCapableBeanFactory" target="org.ejaeger.springframework.factory.support.AbstractBeanFactory" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="org.ejaeger.springframework.factory.support.AbstractBeanFactory" target="org.ejaeger.springframework.factory.support.DefaultSingletonBeanRegistry" relationship="GENERALIZATION">
+      <point x="-77.5" y="-49.5" />
+      <point x="196.25" y="230.0" />
+      <point x="143.5" y="230.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="org.ejaeger.springframework.factory.support.DefaultSingletonBeanRegistry" target="org.ejaeger.springframework.factory.config.SingletonBeanRegistry" relationship="REALIZATION">
+      <point x="0.0" y="-50.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="org.ejaeger.springframework.factory.support.DefaultListableBeanFactory" target="org.ejaeger.springframework.factory.support.AbstractAutowireCapableBeanFactory" relationship="GENERALIZATION">
+      <point x="-91.0" y="-50.0" />
+      <point x="371.25" y="484.0" />
+      <point x="273.75" y="484.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.9638242894056848" showDependencies="false" x="416.5" y="377.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
