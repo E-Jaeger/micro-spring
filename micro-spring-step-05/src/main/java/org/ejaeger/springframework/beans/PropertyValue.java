@@ -18,4 +18,12 @@ public class PropertyValue {
     public Object getValue() {
         return value;
     }
+
+    @Override
+    public String toString() {
+        return "PropertyValue{" +
+                "name='" + name + '\'' +
+                ", value=" + value +
+                '}';
+    }
 }

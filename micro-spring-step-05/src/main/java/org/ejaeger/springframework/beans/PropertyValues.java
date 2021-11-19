@@ -23,4 +23,11 @@ public class PropertyValues {
         }
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "PropertyValues{" +
+                "propertyValueList=" + propertyValueList +
+                '}';
+    }
 }

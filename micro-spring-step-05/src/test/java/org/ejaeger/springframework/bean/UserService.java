@@ -25,4 +25,12 @@ public class UserService {
     public void setUserDao(UserDao userDao) {
         this.userDao = userDao;
     }
+
+    @Override
+    public String  toString() {
+        return "UserService{" +
+                "uId='" + uId + '\'' +
+                ", userDao=" + userDao +
+                '}';
+    }
 }

@@ -9,6 +9,7 @@ import org.ejaeger.springframework.beans.PropertyValues;
 import org.ejaeger.springframework.beans.factory.config.BeanDefinition;
 import org.ejaeger.springframework.beans.factory.config.BeanReference;
 import org.ejaeger.springframework.beans.factory.support.DefaultListableBeanFactory;
+import org.ejaeger.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.ejaeger.springframework.core.io.DefaultResourceLoader;
 import org.ejaeger.springframework.core.io.Resource;
 import org.junit.Before;
@@ -44,7 +45,7 @@ public class ApiTest {
 
     @Test
     public void test_classpath() throws BeansException, IOException {
-        Resource resource = defaultResourceLoader.getResource("classpath:important.properties");
+        Resource resource = defaultResourceLoader.getResource("classpath:spring.xml");
         String content = IoUtil.readUtf8(resource.getInputStream());
         System.out.println(content);
     }
@@ -58,9 +59,19 @@ public class ApiTest {
 
     @Test
     public void test_url() throws IOException {
-        Resource resource = defaultResourceLoader.getResource("src/test/resources/important.properties");
+        Resource resource = defaultResourceLoader.getResource("https://github.com/E-Jaeger/micro-spring/blob/main/micro-spring-step-05/src/test/resources/spring.xml");
         String content = IoUtil.readUtf8(resource.getInputStream());
         System.out.println(content);
+    }
+
+    @Test
+    public void test_xml() {
+        DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
+        XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);
+        reader.loadBeanDefinitions("classpath:spring.xml");
+        UserService userService = (UserService) factory.getBean("userService");
+        String result = userService.queryUserInfo();
+        System.out.println("测试结果：" + result);
     }
 
 
